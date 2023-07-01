@@ -16,20 +16,19 @@ namespace NumberGuesser
             while (true)
             {
 
-                // Init correct number
-                //int correctNumber = 7;
+                
 
                 // Create a new Random object
                 Random random = new Random();
 
                 // Init correct number
-                int correctNumber = random.Next(1, 10);
+                int correctNumber = random.Next(1, 11);
 
                 // Init guess var
                 int guess = 0;
 
                 // Ask user for number
-                Console.WriteLine("Guess a number between 1 and 10");
+                Console.WriteLine("Guess a number between 1 and 10 inclusive");
 
                 // While guess is not correct
                 while (guess != correctNumber)
@@ -59,7 +58,7 @@ namespace NumberGuesser
                 }
 
                 // Print success message
-                PrintColorMessage(ConsoleColor.Yellow, "CORRECT!! You guessed it!");
+                PrintColorMessage(ConsoleColor.DarkCyan, "CORRECT!! You guessed it!");
 
                 // Ask to play again
                 Console.WriteLine("Play Again? [Y or N]");
@@ -86,7 +85,7 @@ namespace NumberGuesser
             // Set app vars
             string appName = "Number Guesser";
             string appVersion = "1.0.0";
-            string appAuthor = "Brad Traversy";
+            string appAuthor = "Hassan Bulega";
 
             // Change text color
             Console.ForegroundColor = ConsoleColor.Green;
